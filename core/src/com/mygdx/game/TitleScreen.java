@@ -3,9 +3,12 @@ package com.mygdx.game;
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+
+import java.awt.*;
 
 public class TitleScreen extends ScreenAdapter {
 
@@ -14,6 +17,9 @@ public class TitleScreen extends ScreenAdapter {
     FreeTypeFontGenerator generator;
     FreeTypeFontGenerator.FreeTypeFontParameter parameter;
     BitmapFont font12;
+    Texture button1;
+    Texture button2;
+    Texture button3;
 
 
     public TitleScreen(MyGdxGame game) {
@@ -37,6 +43,8 @@ public class TitleScreen extends ScreenAdapter {
         parameter.size = 100;
         font12  = generator.generateFont(parameter);
         Gdx.graphics.setFullscreenMode(Gdx.graphics.getDisplayMode());
+
+        //button1 = new Texture()
     }
 
     @Override

@@ -24,7 +24,7 @@ public class GameScreen2 extends ScreenAdapter {
 
         camera = new OrthographicCamera();
         camera.setToOrtho(false, 1920, 1080);
-        texture = new Texture(Gdx.files.internal("testCharacter.png"));
+        texture = new Texture(Gdx.files.internal("minerArt.png"));
         character = new Rectangle();
         character.x = (1920 / 2) - (64 / 2); //set character's position on screen
         character.y = 20;
