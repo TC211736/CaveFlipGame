@@ -1,7 +1,6 @@
 package com.mygdx.game;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
+
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 
@@ -14,7 +13,6 @@ public class DesktopLauncher {
 		config.setTitle("CaveFlip");
 		config.setWindowedMode(1920,1080);
 		config.useVsync(true);
-
 		new Lwjgl3Application(new MyGdxGame(), config);
 	}
 }
